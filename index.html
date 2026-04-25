@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="/asstes/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- DashBoard Sidebar -->
+         <aside>
+            <div class="top">
+                <div class="logo">
+                    <h2>C <span class="name">SUBHAN</span></h2>
+                </div>
+                <div class="close">
+                    <span class="material-symbols-outlined">close</span>
+                </div>
+            </div>
+
+            <!-- Sidebar Menu Items -->
+             <div class="sidebar">
+                <a href="">
+                    <span class="material-symbols-outlined">grid_view</span>
+                    <h3>Dashboard</h3>
+                </a>
+                <a href="" class="active">
+                    <span class="material-symbols-outlined">person_outline</span>
+                    <h3>Customers</h3>
+                </a>
+                <a href="">
+                    <span class="material-symbols-outlined">insights</span>
+                    <h3>Analytics</h3>
+                </a>
+                <a href="">
+                    <span class="material-symbols-outlined">mail_outline</span>
+                    <h3>Messages</h3>
+                    <span class="msg-count">12</span>
+                </a>
+                <a href="">
+                    <span class="material-symbols-outlined">receipt_long</span>
+                    <h3>Products</h3>
+                </a>
+                <a href="">
+                    <span class="material-symbols-outlined">report_gmailerrorred</span>
+                    <h3>Reports</h3>
+                </a>
+                <a href="">
+                    <span class="material-symbols-outlined">settings</span>
+                    <h3>Settings</h3>
+                </a>
+                <a href="">
+                    <span class="material-symbols-outlined">add</span>
+                    <h3>Add Product</h3>
+                </a>
+                <a href="">
+                    <span class="material-symbols-outlined">logout</span>
+                    <h3>Logout</h3>
+                </a>
+
+
+             </div>
+
+         </aside>
+
+
+         <!-- Main DashBoard -->
+
+         <main>
+            <h1>Dashboard</h1>
+
+            <div class="date">
+                <input type="date">
+            </div>
+
+            <!-- DashBoard Stats -->
+
+            <div class="insights">
+
+                <!-- Sales -->
+
+                 <div class="sales">
+                    <span class="material-symbols-outlined">trending_up</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Total Sales</h3>
+                            <h1>$30,755</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle r="30" cy="40" cx="40"></circle>
+                            </svg>
+                            <div class="number">75%</div>
+                        </div>
+                    </div>
+                 <small>Last 24 Hours</small>
+            </div>
+
+            <!-- Expenses -->
+
+             <div class="expenses">
+                    <span class="material-symbols-outlined">local_mall</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Expenses</h3>
+                            <h1>$30,755</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle r="30" cy="40" cx="40"></circle>
+                            </svg>
+                            <div class="number">80%</div>
+                        </div>
+                    </div>
+                 <small>Last 24 Hours</small>
+            </div>
+
+            <!-- Income -->
+
+             <div class="income">
+                    <span class="material-symbols-outlined">stacked_line_chart</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Income</h3>
+                            <h1>$30,755</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle r="30" cy="40" cx="40"></circle>
+                            </svg>
+                            <div class="number">100%</div>
+                        </div>
+                    </div>
+                 <small>Last 24 Hours</small>
+            </div>
+            </div>
+        
+
+
+            <!-- Recent Order -->
+
+            <div class="recent-orders">
+                <h1>Recent Orders</h1>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Product Name</th>
+                            <th>Product Number</th>
+                            <th>Payments</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>Wireless Earbuds</td>
+                            <td>791</td>
+                            <td>Due</td>
+                            <td class="warning">Pending</td>
+                            <td class="primary">Details</td>
+                        </tr>
+
+                        <tr>
+                            <td>Laptop</td>
+                            <td>751</td>
+                            <td>Due</td>
+                            <td class="warning">Pending</td>
+                            <td class="primary">Details</td>
+                        </tr>
+
+                        <tr>
+                            <td>CellPhone Charger</td>
+                            <td>598</td>
+                            <td>Due</td>
+                            <td class="warning">Pending</td>
+                            <td class="primary">Details</td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+            </div>
+
+
+         </main>
+
+
+
+         <div class="right">
+            <h1>Right</h1>
+         </div>
+    </div>
+    
+
+
+
+
+    <script src="/asstes/js/script.js"></script>
+</body>
+</html>

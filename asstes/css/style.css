@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+  /* 
+  Variables
+  */
+
+:root {
+    --clr-primary: #7380ec;
+  --clr-danger: #ff7782;
+  --clr-success: #41f1b6;
+  --clr-white: #fff;
+  --clr-info-dark: #7d8da1;
+  --clr-info-light: #dce1eb;
+  --clr-dark: #363949;
+  --clr-warnig: #ff4edc;
+  --clr-light: rgba(132, 139, 200, 0.18);
+  --clr-primary-variant: #111e88;
+  --clr-dark-variant: #677483;
+  --clr-color-background: #f6f6f9;
+
+  --card-border-radius: 2rem;
+  --border-radius-1: 0.4rem;
+  --border-radius-2: 0.8rem;
+  --border-radius-3: 1.2rem;
+
+  --card-padding: 1.8rem;
+  --padding-1: 1.2rem;
+  --box-shadow: 0 2rem 3rem var(--clr-light);
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: 0;
+    list-style: none;
+    appearance: none;
+}
+
+
+
+  /* 
+   body 
+  */
+
+body {
+    font-family: 'Poppins' , sans-serif;
+    width: 100vw;
+    height: 100vh;
+    font-size: 0.88rem;
+    user-select: none;
+    overflow-x: hidden;
+    background: var(--clr-color-background);
+}
+
+
+  /* 
+   Layout Container
+   */
+
+.container {
+    display: grid;
+    width: 96%;
+    gap: 1.8rem;
+    grid-template-columns: 14rem auto 14rem;
+    margin: 0 auto;
+}
+
+
+/* Base & Utility Styles */
+
+a {
+    color: var(--clr-dark);
+}
+
+.profile-photo {
+    width: 2.8rem;
+    height: 2.8rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.text-muted {
+    color: var(--clr-info-dark);
+}
+
+p {
+    color: var(--clr-dark-variant);
+}
+
+b {
+    font-variant: var(--clr-dark);
+}
+
+.primary {
+    color: var(--clr-primary);
+}
+
+.success {
+    color: var(--clr-success);
+}
+
+.name {
+    color: var(--clr-danger);
+}
+
+.warning {
+    color: var(--clr-warnig);
+}
+
+
+
+/* Dashboard SideBar */
+
+aside {
+    height: 100vh;
+
+}
+
+aside .top {
+    background: var(--clr-white);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1.4rem;
+}
+
+aside .logo {
+    display: flex;
+    gap: 1rem;
+}
+
+aside .top  div.close {
+    display: none;
+
+}
+
+/* SideBar Menu Items */
+
+.sidebar {
+    background: var(--clr-white);
+    display: flex;
+    flex-direction: column;
+    height: 85vh;
+    position: relative;
+    top: 1rem;
+}
+
+aside h3 {
+    font-weight: 400;
+
+}
+
+.sidebar a {
+    display: flex;
+    color: var(--clr-info-dark);
+    margin-left: 2rem;
+    gap: 1rem;
+    align-items: center;
+    height: 3.2rem;
+    transition: all .1s ease-in;
+}
+
+.sidebar a span {
+    font-size: 1.6rem;
+    transition: all .1s ease-in;
+}
+
+.sidebar a:last-child {
+    position: absolute;
+    bottom: 1rem;
+    width: 100%;
+}
+
+.sidebar a.active {
+    background: var(--clr-light);
+    color: var(--clr-primary);
+    margin-left: 0;
+}
+
+.sidebar a.active::before {
+    content: '';
+    width: 6px;
+    height: 100%;
+    background: var(--clr-primary);
+}
+
+.sidebar a:hover {
+    color: var(--clr-primary);
+}
+
+.sidebar a:hover span {
+    margin-left: 1rem;
+    transition: .4s ease;
+}
+
+.msg-count {
+    background: var(--clr-danger);
+    color: var(--clr-white);
+    padding: 2px 5px;
+    font-size: 11px !important;
+    border-radius: var(--border-radius-1);
+}
+
+
+/* Main DashBoard */
+
+main {
+    margin-top: 1.4rem;
+    width: auto;
+}
+
+main input {
+    background: transparent;
+    border: 0;
+    outline: 0;
+    color: var(--clr-dark);
+}
+
+main .date {
+    display: inline-block;
+    background: var(--clr-white);
+    border-radius: var(--border-radius-1);
+    margin-top: 1rem;
+    padding: 0.5rem 1.6rem;
+}
+
+main h1 {
+    color: var(--clr-dark);
+}
+
+/* Dashboard Stats */
+
+
+.insights {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.6rem;
+}
+
+.insights h1, h3, .number, small {
+    color: var(--clr-dark); 
+}
+
+.insights>div {
+    background: var(--clr-white);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    margin-top: 1rem;
+    box-shadow: var(--box-shadow);
+    transition: all .3s ease;
+}
+
+.insights>div:hover {
+    box-shadow: none;
+}
+
+.insights span {
+    background: coral;
+    padding: 0.5rem;
+    border-radius: 50%;
+    color: var(--clr-white);
+    font-size: 2rem;
+}
+
+.insights>div.expenses span {
+    background: var(--clr-danger);
+}
+
+.insights>div.income span {
+    background: var(--clr-success);
+}
+
+.insights>div .middle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.insights>div .middle h1 {
+    font-size: 1.6rem;
+}
+
+
+
+.insights .progress {
+    position: relative;
+    height: 68px;
+    width: 68px;
+    border-radius: 50px;
+}
+
+.insights svg {
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    top: 0;
+}
+
+.insights svg circle {
+    fill: none;
+    stroke: var(--clr-primary);
+    transform: rotate(270, 80, 80);
+    stroke-width: 5;
+}
+
+.sales svg circle {
+    stroke-dashoffset: 10;
+    stroke-dasharray: 150;
+    stroke: coral;
+}
+
+.expenses svg circle{
+    stroke-dashoffset: 0;
+    stroke-dasharray: 150;
+    stroke: var(--clr-danger);
+}
+
+.income svg circle {
+    stroke: var(--clr-success);
+}
+
+.number {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
