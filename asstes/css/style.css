@@ -6,18 +6,18 @@
   */
 
 :root {
-    --clr-primary: #7380ec;
-  --clr-danger: #ff7782;
-  --clr-success: #41f1b6;
+    --clr-primary: #4f6bed;
+  --clr-danger: #d96b72;
+  --clr-success: #2f9e78;
   --clr-white: #fff;
-  --clr-info-dark: #7d8da1;
-  --clr-info-light: #dce1eb;
-  --clr-dark: #363949;
-  --clr-warnig: #ff4edc;
-  --clr-light: rgba(132, 139, 200, 0.18);
-  --clr-primary-variant: #111e88;
-  --clr-dark-variant: #677483;
-  --clr-color-background: #f6f6f9;
+  --clr-info-dark: #6f7c91;
+  --clr-info-light: #e7edf5;
+  --clr-dark: #273142;
+  --clr-warnig: #c28a2e;
+  --clr-light: rgba(79, 107, 237, 0.12);
+  --clr-primary-variant: #3951b8;
+  --clr-dark-variant: #5f6c7f;
+  --clr-color-background: #f4f7fb;
 
   --card-border-radius: 2rem;
   --border-radius-1: 0.4rem;
@@ -125,6 +125,14 @@ b {
 
 .warning {
     color: var(--clr-warnig);
+}
+
+.danger {
+    color: var(--clr-dark);
+}
+
+body.dark-theme-variables .danger {
+    color: #ffffff;
 }
 
 
@@ -301,7 +309,7 @@ main h1 {
 }
 
 .insights span {
-    background: coral;
+    background: var(--clr-primary-variant);
     padding: 0.5rem;
     border-radius: 50%;
     color: var(--clr-white);
@@ -352,7 +360,7 @@ main h1 {
 .sales svg circle {
     stroke-dashoffset: 10;
     stroke-dasharray: 150;
-    stroke: coral;
+    stroke: var(--clr-primary-variant);
 }
 
 .expenses svg circle{
@@ -563,7 +571,7 @@ table tbody tr:last-child td {
 }
 
 .item-online .icon {
-    background-color: coral;
+    background-color: var(--clr-primary-variant);
     color: var(--clr-white);
     padding: 0.6rem;
     border-radius: 50%;
